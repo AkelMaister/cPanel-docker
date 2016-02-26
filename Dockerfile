@@ -2,7 +2,6 @@ FROM centos:7
 MAINTAINER Akel <akel@maintainer.com> 
 
 ENV container docker 
-ENV hostname fake.dnska.com
 
 RUN yum -y swap -- remove fakesystemd -- install systemd systemd-libs
 RUN yum -y update; yum clean all; \
